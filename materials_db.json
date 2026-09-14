@@ -1,0 +1,186 @@
+{
+  "folders": [
+    {
+      "id": "folder-agronomy",
+      "name": "Agronomy (सस्य विज्ञान)",
+      "category": "all",
+      "targetBatch": "both",
+      "description": "Crop seasons, seed rates, irrigation stages, tillage, weed control",
+      "icon": "Wheat",
+      "color": "#1b5e20"
+    },
+    {
+      "id": "folder-soil",
+      "name": "Soil Science & Fertilizers (मृदा विज्ञान)",
+      "category": "all",
+      "targetBatch": "both",
+      "description": "Soil horizons, pH, reclamation of sodic/acid soils, nutrient deficiency",
+      "icon": "Layers",
+      "color": "#795548"
+    },
+    {
+      "id": "folder-horticulture",
+      "name": "Horticulture & Olericulture (उद्यान विज्ञान)",
+      "category": "all",
+      "targetBatch": "both",
+      "description": "Fruit crops, vegetable cultivation, pest management, preservation",
+      "icon": "Apple",
+      "color": "#e65100"
+    },
+    {
+      "id": "folder-up-gk",
+      "name": "UP Special Agriculture (उत्तर प्रदेश कृषि GK)",
+      "category": "all",
+      "targetBatch": "both",
+      "description": "9 Agro-climatic zones of UP, river basins, state government schemes",
+      "icon": "Landmark",
+      "color": "#0277bd"
+    },
+    {
+      "id": "folder-pathology",
+      "name": "Plant Pathology & Entomology (कीट व रोग)",
+      "category": "all",
+      "targetBatch": "both",
+      "description": "Crop diseases, insect pests, IPM, fungicides and insecticides",
+      "icon": "Bug",
+      "color": "#6a1b9a"
+    },
+    {
+      "id": "folder-animal",
+      "name": "Animal Husbandry & Dairying (पशुपालन)",
+      "category": "all",
+      "targetBatch": "both",
+      "description": "Breeds of cow & buffalo, milk composition, feeds and veterinary care",
+      "icon": "Milk",
+      "color": "#00695c"
+    },
+    {
+      "id": "folder-mock-tests",
+      "name": "Online Mock Tests & Quizzes (मॉक टेस्ट)",
+      "category": "quiz",
+      "targetBatch": "both",
+      "description": "Full-length syllabus tests and previous years papers",
+      "icon": "CheckSquare",
+      "color": "#c2185b"
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Demo 1: Introduction to Soil Science & Soil pH",
+      "subject": "Soil Science",
+      "duration": "18:45",
+      "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "Learn fundamental concepts of soil profile, soil texture, cation exchange capacity (CEC), and pH management for UP agricultural lands.",
+      "isPaid": false,
+      "targetBatch": "free",
+      "topics": [
+        "Master soil horizons (O, A, E, B, C, R)",
+        "Difference between active acidity and potential acidity",
+        "Reclamation of Acidic Soils using Lime (CaCO3)",
+        "Reclamation of Saline & Sodic soils using Gypsum (CaSO4.2H2O)"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Demo 2: Principles of Agronomy & Crop Seasons",
+      "subject": "Agronomy",
+      "duration": "22:10",
+      "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "Detailed analysis of Kharif, Rabi, and Zaid seasons, sowing times, seed rate calculations, and critical irrigation stages.",
+      "isPaid": false,
+      "targetBatch": "free",
+      "topics": [
+        "Kharif (June-October): Paddy, Maize, Cotton, Groundnut",
+        "Rabi (October-March): Wheat, Mustard, Gram, Barley",
+        "Critical irrigation stages of Wheat (CRI stage at 21 DAS)",
+        "Tillage classification: Primary vs Secondary tillage"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Demo 3: Horticulture - Fruit & Vegetable Production",
+      "subject": "Horticulture",
+      "duration": "16:30",
+      "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "High-yield facts for Mango, Guava, Banana, Tomato, and Potato cultivation in Uttar Pradesh.",
+      "isPaid": false,
+      "targetBatch": "free",
+      "topics": [
+        "Mango malformation causes & NAA hormone management",
+        "Guava training and pruning for winter Mrig Bahar crop",
+        "TPS (True Potato Seed) technology developed by Dr. Pushkarnath",
+        "Pungency in Onion (Allyl propyl disulphide) & Garlic (Allicin)"
+      ]
+    }
+  ],
+  "pdfs": [
+    {
+      "id": "pdf-1",
+      "title": "UP Agriculture GK & Agro-Climatic Zones",
+      "subject": "UP Special Agriculture",
+      "pages": "12 Pages",
+      "fileSize": "1.8 MB",
+      "language": "Hindi & English",
+      "fileName": "UP_Agro_Climatic_Zones_Summary.pdf",
+      "summary": "Complete breakdown of all 9 agro-climatic zones of Uttar Pradesh, district-wise soil maps, major river basins, and government agricultural schemes.",
+      "fileContent": "UPSSSC AGTA 2026 - UTTAR PRADESH SPECIAL AGRICULTURE FACTSHEET\n...",
+      "isPaid": false,
+      "targetBatch": "free"
+    },
+    {
+      "id": "pdf-2",
+      "title": "Agronomy Formulas, Seed Rates & Spacing",
+      "subject": "Agronomy",
+      "pages": "18 Pages",
+      "fileSize": "2.4 MB",
+      "language": "Bilingual (Hindi/Eng)",
+      "fileName": "Agronomy_Seed_Rate_Calculations.pdf",
+      "summary": "Quick calculation handbook: Plant population formulas, weedicide calculation, fertilizer dose determination, and critical crop water requirements.",
+      "fileContent": "AGRONOMY NUMERICAL HANDBOOK FOR UPSSSC AGTA\n...",
+      "isPaid": false,
+      "targetBatch": "free"
+    },
+    {
+      "id": "pdf-3",
+      "title": "Soil Science & Nutrient Deficiency Symptoms",
+      "subject": "Soil Science",
+      "pages": "15 Pages",
+      "fileSize": "2.1 MB",
+      "language": "Hindi",
+      "fileName": "Soil_Science_Nutrient_Guide.pdf",
+      "summary": "Illustrated chart of Nitrogen, Phosphorus, Potassium, Zinc, and Boron deficiency in cereals and pulses with reclamation strategies.",
+      "fileContent": "SOIL SCIENCE & CROP NUTRITION HIGH-YIELD SUMMARY\n...",
+      "isPaid": false,
+      "targetBatch": "free"
+    }
+  ],
+  "quizQuestions": [],
+  "quizLinks": [
+    {
+      "id": "ql-1",
+      "title": "UPSSSC AGTA Live Mock Test - 01 (Agronomy & Soil Science)",
+      "subject": "Agronomy & Soil Science",
+      "quizUrl": "https://forms.gle/agri-mock-test-01",
+      "totalQuestions": "50 Questions",
+      "duration": "45 Minutes",
+      "description": "Faculty curated mock test covering crop seasons, soil reclamation, fertilizer calculations, and UP agriculture schemes.",
+      "addedDate": "Live Test",
+      "isPaid": false,
+      "targetBatch": "free"
+    },
+    {
+      "id": "ql-2",
+      "title": "UP Agriculture Special & GK Marathon Quiz - 02",
+      "subject": "UP Special GK",
+      "quizUrl": "https://forms.gle/agri-mock-test-02",
+      "totalQuestions": "50 Questions",
+      "duration": "45 Minutes",
+      "description": "9 Agro-climatic zones, UP canal systems, state agricultural university milestones and latest budget schemes.",
+      "addedDate": "Live Test",
+      "isPaid": false,
+      "targetBatch": "free"
+    }
+  ],
+  "updatedAt": "2026-09-14T06:57:29.101Z"
+}

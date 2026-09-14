@@ -1,0 +1,8 @@
+{
+  "name": "Agri Concept & Fact",
+  "description": "Comprehensive learning portal for agriculture competitive exams and UPSSSC AGTA preparation with video lectures, study notes, daily quizzes, and premium courses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
