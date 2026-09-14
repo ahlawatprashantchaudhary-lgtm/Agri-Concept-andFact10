@@ -208,7 +208,9 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
                 ? quizLinks.filter(q => q.folderId === matchedFolder.id || q.subject === matchedFolder.name)
                 : [];
               const totalItemsInFolder = folderPdfs.length + folderVideos.length + folderQuizzes.length;
-              const isUserEnrolled = hasPurchasedBatch || isAdmin || (currentUser && batch.enrolledStudents.includes(currentUser.email));
+              const isUserEnrolled = hasPurchasedBatch || isAdmin || (currentUser && Boolean(batch.enrolledStudents?.includes(currentUser.email)));
+              const enrolledCount = (batch.enrolledStudents?.length ?? 0) + 120;
+              const discount = batch.discountPercentage ?? (batch.originalPrice && batch.originalPrice > batch.price ? Math.round(((batch.originalPrice - batch.price) / batch.originalPrice) * 100) : 0);
 
               return (
                 <div
@@ -225,12 +227,12 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
 
                       <span className="text-xs text-zinc-600 bg-zinc-100 px-3 py-1 rounded-full font-semibold flex items-center gap-1.5">
                         <Users className="w-3.5 h-3.5 text-zinc-500" />
-                        <span>{batch.enrolledStudents.length + 120} छात्र एनरोल्ड हैं</span>
+                        <span>{enrolledCount} छात्र एनरोल्ड हैं</span>
                       </span>
 
-                      {batch.discountPercentage > 0 && (
+                      {discount > 0 && batch.originalPrice && batch.originalPrice > batch.price && (
                         <span className="bg-emerald-600 text-white text-xs font-black px-2.5 py-1 rounded-full">
-                          {batch.discountPercentage}% भारी छूट (Save ₹{batch.originalPrice - batch.price})
+                          {discount}% भारी छूट (Save ₹{batch.originalPrice - batch.price})
                         </span>
                       )}
                     </div>
@@ -342,11 +344,11 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
                         <span className="text-3xl font-black text-[#1b5e20]">
                           ₹{batch.price}
                         </span>
-                        {batch.originalPrice > batch.price && (
+                        {batch.originalPrice && batch.originalPrice > batch.price ? (
                           <span className="text-base text-zinc-400 line-through font-semibold">
                             ₹{batch.originalPrice}
                           </span>
-                        )}
+                        ) : null}
                         <span className="text-xs text-zinc-500 font-semibold">
                           (एकमुश्त फीस, पूर्ण वैधता परीक्षा तक)
                         </span>

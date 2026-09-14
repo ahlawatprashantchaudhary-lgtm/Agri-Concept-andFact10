@@ -645,6 +645,7 @@ export const DEFAULT_BATCHES: StudyBatch[] = [
     telegramLink: 'https://t.me/AgriTargetStateExam',
     isSpecialBatch: true,
     color: '#1b5e20',
+    enrolledStudents: [],
     features: [
       '120+ High-Definition Recorded Video Lectures covering all syllabus modules',
       'Complete Chapter-wise PDF Notes & Fact-Sheets (English + Hindi)',
@@ -673,6 +674,7 @@ export const DEFAULT_BATCHES: StudyBatch[] = [
     telegramLink: 'https://t.me/AgriTargetStateExam',
     isSpecialBatch: false,
     color: '#f57c00',
+    enrolledStudents: [],
     features: [
       'Daily Live & Recorded Video Classes',
       'Subject Wise Digital Handouts & Mindmaps',
