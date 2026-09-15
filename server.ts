@@ -1,11 +1,7 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
@@ -14,7 +10,7 @@ const PORT = 3000;
 app.use(express.json({ limit: "100mb" }));
 app.use(express.urlencoded({ extended: true, limit: "100mb" }));
 
-const DB_FILE = path.join(__dirname, "materials_db.json");
+const DB_FILE = path.join(process.cwd(), "materials_db.json");
 
 // Default seed data for Folders (Unlimited folders, custom pricing, payment & telegram links supported)
 const DEFAULT_FOLDERS = [
