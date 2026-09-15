@@ -20,7 +20,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
     e.preventDefault();
     
     // यहाँ अपनी एडमिन आईडी डालें
-    const ADMIN_ID = "7055975531"; // या ahlawatprashantchaudhary@email.com
+    const ADMIN_ID = "7055975531"; // या admin@email.com
     
     if (contactInfo === ADMIN_ID) {
       alert("Admin Verified! Redirecting to Admin Portal...");
@@ -42,7 +42,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-xs animate-in fade-in duration-150">
+    <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in duration-150">
       <div className="bg-white rounded-3xl shadow-xl w-full max-w-md relative overflow-hidden flex flex-col p-6 sm:p-8">
         
         {/* Close Button */}
